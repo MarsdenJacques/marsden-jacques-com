@@ -1,0 +1,6 @@
+.container{
+    display: flex;
+}
+.selector{
+    color: rgb(100, 27, 27);
+}

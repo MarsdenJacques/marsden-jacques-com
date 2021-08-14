@@ -1,0 +1,44 @@
+.banner{
+    left: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 200vw;
+}
+.text{
+    color: rgb(232, 236, 10);
+    font-weight: bold;
+    font-size: 200px;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    animation-name: textLoop;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.text1{
+    left: 0;
+    animation-delay: 0;
+}
+.text2{
+    left: 50vw;
+    animation-delay: -10s;
+}
+
+@keyframes textLoop{
+    0% {left: 100vw;}
+    50%{left: 0;}
+    50.01%{left: 0;}
+    100%{left: -100vw;}
+}
+@media only screen and (max-width: 775px) {
+    .text{
+        font-size: 20vw;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .text{
+        font-size: 80px;
+    }
+}
