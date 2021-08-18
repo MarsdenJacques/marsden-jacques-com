@@ -1,20 +1,28 @@
-import Image from 'next/image'
 import BannerText from "../components/banner-text.js"
 import LanguagePicker from '../components/language-picker.js'
-import About from '../components/about.js'
-import Portfolio from '../components/portfolio.js'
-import Contact from '../components/contact.js'
+import Directory from '../components/directory.js'
+import Section from '../components/section-layout.js'
+import { useState } from 'react'
 import { English, Japanese } from '../components/text.js'
 import styles from '../styles/home.module.css'
 
 export default function Home() {
+  const [currentSection, setCurrentSection] = useState(-1)
+  console.log(currentSection)
   return (
-      <main className={styles.main}>
-        <p className = {styles.text}>test</p>
-        <p className = {styles.text2}>Marsden Jacques<br/>Websites<br/>Games<br/>Research</p>
-        <BannerText text = {English.aboutBanner}/>
-        <LanguagePicker/>
-        <About/>
-      </main>
+    <div className = {styles.mainContainer}>
+        <BannerText text = {English.banner[currentSection]}/>
+        <Directory className = {styles.directory} currentSection = {currentSection}/>
+        <LanguagePicker className = {styles.languagePicker}/>
+        <main className={styles.main} >
+          {
+            English.banner.map((banner, index)=>{
+              return(
+                <Section key = {banner} className = {styles.section} imgs = {English.images[index]} blurbText = {English.blurb[index]} imgText = {English.imageText[index]} sectionIndex = {index} setSection = {setCurrentSection}/>
+              )
+            })
+          }
+        </main>
+    </div>
   )
 }

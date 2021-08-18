@@ -1,9 +1,17 @@
 .img{
-    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
 }
 .circle{
-    color: white;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
 .text{
     color: white;
+}
+.container{
+    position: relative;
 }

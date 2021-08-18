@@ -1,3 +1,13 @@
 .container{
+    z-index: 5;
+    position: absolute;
+    bottom: 10px;
+    right: 200px;
     display: flex;
+}
+.text{
+    color: rgb(100, 27, 27);
+    z-index: 5;
+    font-weight: bold;
+    font-size: 30px;
 }

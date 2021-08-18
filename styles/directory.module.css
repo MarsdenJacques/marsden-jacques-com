@@ -1,9 +1,38 @@
 .container{
     display: flex;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+.subContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30px;
 }
 .textContainer{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 30px
 }
 .selector{
     color: rgb(100, 27, 27);
+    padding-block: 25px;
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+    transform: rotate(90deg);
+}
+.portfolioSectionOff{
+    display: none;
+}
+.portfolioSection{
+    color:rgb(100, 27, 27);
 }

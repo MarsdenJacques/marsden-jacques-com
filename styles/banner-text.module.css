@@ -2,8 +2,13 @@
     left: 0;
     padding: 0;
     margin: 0;
-    position: absolute;
+    position: fixed;
+    top: 50%;
     width: 200vw;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 .text{
     color: rgb(232, 236, 10);
@@ -11,9 +16,9 @@
     font-size: 200px;
     padding: 0;
     margin: 0;
-    position: fixed;
+    position: absolute;
     animation-name: textLoop;
-    animation-duration: 20s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -23,7 +28,7 @@
 }
 .text2{
     left: 50vw;
-    animation-delay: -10s;
+    animation-delay: -20s;
 }
 
 @keyframes textLoop{
