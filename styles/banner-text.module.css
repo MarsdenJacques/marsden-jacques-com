@@ -4,11 +4,14 @@
     margin: 0;
     position: fixed;
     top: 50%;
+    transform: translate(0,-50%);
     width: 200vw;
     z-index: 2;
     text-align: center;
     display: flex;
     align-items: center;
+    height: 300px;
+    overflow: hidden;
 }
 .text{
     color: rgb(232, 236, 10);
@@ -21,6 +24,19 @@
     animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    top: 40px;
+    opacity: 1;
+    /*text-shadow: 3px 3px 10px gray;*/
+    transition: opacity 1s ease-out, top .5s ease-in-out;
+    will-change: left, top;
+}
+.above{
+    top: -310px !important;
+    opacity: 0;
+}
+.below{
+    top: 230px !important;
+    opacity: 0;
 }
 .text1{
     left: 0;
@@ -42,7 +58,7 @@
         font-size: 20vw;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .text{
         font-size: 80px;
     }

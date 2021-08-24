@@ -1,9 +1,13 @@
 import styles from '../styles/language-picker.module.css'
-export default function LanguagePicker({SelectLanguage}){
+import Language from './text.js'
+export default function LanguagePicker({setCurrentLanguage}){
     return(
         <div className = {styles.container}>
-            <p className = {styles.selector}>English</p>
-            <p className = {styles.selector}>日本語</p>
+            {
+                Language.map((language, index)=>{
+                    return(<p key = {index} className = {styles.selector} onClick = {() => {setCurrentLanguage(index)}}>{language.language}</p>)
+                })
+            }
         </div>
     )
 }

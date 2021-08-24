@@ -2,7 +2,7 @@ import styles from '../styles/section-layout.module.css'
 import Blurb from './blurb.js'
 import { useState, useEffect, useRef } from 'react'
 import ImageCircle from './image-circle.js'
-export default function Layout({imgs, blurbText, imgText, sectionIndex, setSection}){
+export default function Layout({sectionName, imgs, blurbText, imgText, sectionIndex, setSection, link}){
     const [isIntersecting, setIntersecting] = useState(false)
     const ref = useRef()
     useEffect(() => {
@@ -17,17 +17,19 @@ export default function Layout({imgs, blurbText, imgText, sectionIndex, setSecti
         }
       },[isIntersecting])
     return(
-        <div ref = {ref}className = {styles.container}>
+        <div className = {styles.layout}>
+            <div ref = {ref}className = {styles.container} id = {sectionName}>
             {
-                imgs.map((img, index) => {
+                imgs !== undefined && imgs.map((img, index) => {
                     return( 
-                        <div key = {index} className = {styles.imageContainer} style = {{paddingBottom: '' + Random(60,100,true) + 'px', paddingLeft: '' + Random(100,200,true) + 'px'}}>
-                            <ImageCircle className = {styles.image} image = {img} text = {imgText[index]}/>
+                        <div key = {index} className = {styles.imageContainer} style = {{paddingBottom: '' + 0 + 'px', paddingLeft: '' + 0 + 'px'}}>
+                            <ImageCircle className = {styles.image} image = {img} text = {imgText[index]} link = {link[index]}/>
                         </div>
                     )
                 })
             }
-            <Blurb text = {blurbText}/>
+            </div>
+            <div className = {styles.blurb}><Blurb text = {blurbText}/></div>
         </div>
     )
 }

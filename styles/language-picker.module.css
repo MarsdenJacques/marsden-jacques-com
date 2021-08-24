@@ -12,4 +12,26 @@
     color: rgb(100, 27, 27);margin: 0;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    padding-block: 5px;
+}
+.selector:hover{
+    text-decoration: underline 3px solid rgb(232, 236, 10);
+    text-underline-offset: 3px;
+    transition: none;
+}
+@media only screen and (max-width: 450px) {
+    .container{
+        left: -50px;
+        bottom: 100px;
+        flex-direction: row;
+    }
+    .selector{
+        padding-inline: 10px;
+    }
+    .container{
+        transform: rotate(90deg);
+    }
 }

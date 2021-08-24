@@ -3,22 +3,27 @@ import LanguagePicker from '../components/language-picker.js'
 import Directory from '../components/directory.js'
 import Section from '../components/section-layout.js'
 import { useState } from 'react'
-import { English, Japanese } from '../components/text.js'
+import Language from '../components/text.js'
 import styles from '../styles/home.module.css'
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(-1)
-  console.log(currentSection)
+  const [currentLanguage, setCurrentLanguage] = useState(0)
   return (
     <div className = {styles.mainContainer}>
-        <BannerText text = {English.banner[currentSection]}/>
-        <Directory className = {styles.directory} currentSection = {currentSection}/>
-        <LanguagePicker className = {styles.languagePicker}/>
+        <BannerText currentText = {Language[currentLanguage].banner[currentSection]}/>
+        <Directory className = {styles.directory} currentSection = {currentSection} currentLanguage = {Language[currentLanguage]}/>
+        <LanguagePicker className = {styles.languagePicker} setCurrentLanguage = {setCurrentLanguage}/>
         <main className={styles.main} >
           {
-            English.banner.map((banner, index)=>{
+            Language[currentLanguage].banner.map((banner, index)=>{
               return(
-                <Section key = {banner} className = {styles.section} imgs = {English.images[index]} blurbText = {English.blurb[index]} imgText = {English.imageText[index]} sectionIndex = {index} setSection = {setCurrentSection}/>
+                <Section key = {index} className = {styles.section} imgs = {Language[currentLanguage].images[index]} 
+                blurbText = {Language[currentLanguage].blurb[index]} 
+                imgText = {Language[currentLanguage].imageText[index]} 
+                sectionIndex = {index} setSection = {setCurrentSection}
+                sectionName = {Language[0].banner[index]}
+                link = {Language[currentLanguage].link[index]}/>
               )
             })
           }

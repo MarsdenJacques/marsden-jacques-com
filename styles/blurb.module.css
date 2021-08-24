@@ -1,13 +1,19 @@
 .container{
     z-index: 5;
-    position: absolute;
-    bottom: 10px;
-    right: 200px;
     display: flex;
+    max-width: 600px;
 }
 .text{
-    color: rgb(100, 27, 27);
+    color: black;/*rgb(100, 27, 27);*/
+    min-height: 0;
+    flex: 1 1 auto;
     z-index: 5;
     font-weight: bold;
     font-size: 30px;
+    overflow-wrap: break-word;
+    min-width: 0;
+}@media only screen and (max-width: 450px) {
+    .text{
+        font-size: 20px;
+    }
 }

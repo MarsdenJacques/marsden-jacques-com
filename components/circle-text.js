@@ -1,14 +1,18 @@
 import styles from '../styles/circle-text.module.css'
-export default function CircleText({text}){
+import CircleTextSVG from './circle-text-svg'
+export default function CircleText({text, maxChars}){
+    const chars = text.split("")
     return(
-        <div>
-            {text.split("").map((char, index) => {
-                let val = 30 + index
-                let delay = '-' + val + 's';
-                return (<div className = {styles.container} key = {index} style = {{animationDelay: delay}}>
-                    {char}
-                </div>)
-            })}
+        <div className = {styles.container}>
+            <CircleTextSVG text = {text}/>
         </div>
     )
 }
+
+/*            {maxChars.map((char, index) => {
+                let val = 30 + index * chars.length/maxChars.length
+                let delay = '-' + val + 's';
+                return (<div className = {styles.container} key = {index} style = {{animationDelay: delay}}>
+                    {index < chars.length ? chars[index] : ''}
+                </div>)
+            })}*/

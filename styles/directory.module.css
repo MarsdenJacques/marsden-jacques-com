@@ -1,38 +1,56 @@
 .container{
     display: flex;
     position: fixed;
-    right: 10px;
-    top: 10px;
+    right: 5px;
+    top: -15px;
     z-index: 99;
     flex-direction: row;
     align-items: center;
-    width: fit-content;
-    height: fit-content;
+    justify-content: flex-end;
+    width: 100px;
+    height: 300px;
 }
 .subContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 30px;
+    justify-content: space-evenly;
+    width: 10px;
+    opacity: 1;
+    margin-right: 30px;
+    transform: rotate(90deg);
 }
 .textContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     padding: 0;
-    width: 30px
+    width: 80px;
+    height: 40px;
+    margin: 0px;
 }
 .selector{
     color: rgb(100, 27, 27);
-    padding-block: 25px;
     margin: 0;
-    height: fit-content;
-    width: fit-content;
-    transform: rotate(90deg);
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    user-select: none;
+}
+.link{
+    cursor: pointer;
+    transition: linear .5s;
+}
+.link:hover{
+    text-decoration: underline 3px solid rgb(232, 236, 10);
+    text-underline-offset: 3px;
+    transition: none;
 }
 .portfolioSectionOff{
-    display: none;
-}
-.portfolioSection{
-    color:rgb(100, 27, 27);
+    opacity: 0 !important;
+    cursor: default !important;
 }
