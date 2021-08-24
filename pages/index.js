@@ -4,7 +4,7 @@ import Directory from '../components/directory.js'
 import Section from '../components/section-layout.js'
 import { useState } from 'react'
 import Language from '../components/text.js'
-import styles from '../styles/home.module.css'
+import styles from '../styles/index.module.css'
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(-1)
