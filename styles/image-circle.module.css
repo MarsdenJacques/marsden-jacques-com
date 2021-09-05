@@ -12,9 +12,7 @@
 }
 .linkCircle:hover{
     cursor: pointer;
-    border-color: rgb(232, 236, 10);;
-    border-width: 4px;
-    border-style: solid;
+    box-shadow: 0 0 0 2px rgb(232, 236, 10);
 }
 .text{
     color: white;

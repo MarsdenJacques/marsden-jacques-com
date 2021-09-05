@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../styles/image-circle.module.css'
 import CircleTextSVG from './circle-text-svg'
 export default function ImageCircle({text, image, link}){
@@ -7,9 +6,9 @@ export default function ImageCircle({text, image, link}){
         <div className = {styles.container}>
             {
                 link !== '' ? 
-                <Link className = {styles.link} href = {link}><div className = {styles.circle + ' ' + styles.linkCircle}>
+                <a className = {styles.link} href = {link}><div className = {styles.circle + ' ' + styles.linkCircle}>
                     <Image src = {image} className = {styles.img}/>
-                </div></Link> : 
+                </div></a> : 
                 <div className = {styles.circle}>
                     <Image src = {image} className = {styles.img}/>
                 </div>

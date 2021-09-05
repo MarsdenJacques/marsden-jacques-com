@@ -6,6 +6,7 @@
     height: fit-content;
     min-height: 100vh;
     justify-content: space-between;
+    max-width: 1300px;
 }
 .container{
     display: flex;
@@ -25,12 +26,18 @@
     align-items: center;
     min-width: 300px;
     z-index: 20;
+    margin-block: 50px;
 }
 .blurb{
     margin-left: auto;
     margin-right: 150px;
     padding-left: 150px;
     height: fit-content;
+}
+@media only screen and (max-width: 750px) {
+    .layout{
+        padding-inline: 10px;
+    }
 }
 @media only screen and (max-width: 450px) {
     .blurb{

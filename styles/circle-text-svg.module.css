@@ -1,8 +1,8 @@
 .container{
     width: fit-content;
     position: absolute;
-    top: -50%;
-    left: -50%;
+    top: -18%;
+    left: -16%;
     display: flex;
     justify-content: center;
     align-items: center;
