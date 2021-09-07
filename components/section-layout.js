@@ -2,6 +2,7 @@ import styles from '../styles/section-layout.module.css'
 import Blurb from './blurb.js'
 import { useState, useEffect, useRef } from 'react'
 import ImageCircle from './image-circle.js'
+//add prop for background color, put in text file
 export default function Layout({sectionName, imgs, blurbText, imgText, sectionIndex, setSection, link}){
     const [isIntersecting, setIntersecting] = useState(false)
     const ref = useRef()
