@@ -4,7 +4,7 @@ const English = {
     blurb: ['I am a developer of both websites and games, as well as a published researcher in Computer Science. ' + 
     'I am always looking for new opportunities for freelance work or collaborative projects.' + 
     ' Looking forward to hearing from you!',
-    'My primary tools are Javscript (ReactJS and NodeJS) for websites and Unity with C# for games and AR experiences. I am also comfortable with C++, and Python.',
+    'My primary tools are Javscript (ReactJS and NodeJS) for websites and Unity with C# for games and AR experiences. I am also comfortable with C++ and Python.',
     'The currently hosted websites that I was commissioned to develop, or made as a personal project.',
     'Check out some of my games and game related projects!','Here are my two published papers. My research work is focused on the fields of Combinatorics and Algorithms in Computer Science.',
     'Feel free to get in touch with me on any of these platforms, or email me at: marsdenjacques@gmail.com!'],

@@ -44,4 +44,7 @@
         padding-left: 50px;
         margin-right: 100px;
     }
+    .container{
+        padding-inline: 0px;
+    }
 }
