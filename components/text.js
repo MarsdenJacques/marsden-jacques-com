@@ -25,7 +25,12 @@ const English = {
 const Japanese = {
     language: '日本語',
     banner: ['概要','作品','ウエブ','ゲーム','研究','コンタクト'],
-    blurb: ['テスト','テスト','テスト','テスト','テスト','テスト'],
+    blurb: ['僕はウエブサイトとゲームのプログラマーとコンピューターサイエンスの研究者。いつも新しいチャレンジと面白いフリーランスかコラボのプロジェクトをさがしているから、いつでも僕に連絡して下さい。よろしくお願いします！',
+    'サイト用で大体Javascript(ReactJSとNodeJS)を使っているとゲームとAR用でC#とUnity。それでもC++とPythonも良く使える。これが僕の一番使っているのプログラミング言語。',
+    'これは今ホースチングされているの僕が作ったのサイト',
+    '作ったのゲームとゲーム見たいなプログラムをぜひやって見て下さい',
+    '僕の研究はコンピュータサイエンスの組合せ数学とアルゴリズムに焦点を当てている',
+    'このプラットフォームで僕に連絡しててもいいか、marsdenjacques@gmail.comでemail送ってもいい！よろしくお願いします'],
     images: [['/me1.jpg','/github.png','/resume.jpg'],['/hac.jpg','/tetronivibesweb.jpg','/wogc.jpg'],['/hac.jpg','/notestodo.jpg','/githubsite.jpg'],['/tetronivibesweb.jpg','/conway.jpg','/itchio.svg','/kac.jpg','/miyauchi.jpg'],['/wogc.jpg','/wouc.jpg','/dblp.png'],['/linkedin.png','/email.png']],
     imageText: [['僕', 'いくつかの画像はリンク！例えばこの画像は僕のGitHubのリンク','僕の履歴書'], 
     ['ウエブサイト。。。', 'ゲーム。。。','と研究全部やっている！'], 
