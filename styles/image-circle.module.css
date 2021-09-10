@@ -10,6 +10,7 @@
     height: 150px;
     width: 150px;
     z-index: 20;
+    position: relative;
 }
 .linkCircle:hover{
     cursor: pointer;
