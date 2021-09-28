@@ -39,7 +39,7 @@ const Japanese = {
     ['C#とUnityで作ったTetromiVIBESて言うゲーム', 'Javascriptで作ったConwayのライフゲーム', '僕のitch.ioはこちら!','京都アートセンターにAR展示つくった。。。','とアートギャラリーミヤウチにも作った'],
     ['Generating Gray codes for weak orders in constant amortized time', 'Greedy Universal Cycle Constructions for Weak Orders','DBLPウエブ書誌学'],
     ['Linkedin', 'これをクリックしたらすぐe-mail送られる！']],
-    link: [['','https://github.com/MarsdenJacques','https://drive.google.com/file/d/1f6Uy7rCYCqPbOXF8wwV9CtVElOYyy6ej/view?usp=sharing'],
+    link: [['','https://github.com/MarsdenJacques','https://docs.google.com/document/d/1YTUOPIlhuk1r2w-S14to_A5g3XjuXkiU/edit?usp=sharing&ouid=108797202269380499627&rtpof=true&sd=true'],
     ['/#Websites','/#Games','/#Research'],
     ['https://hiroshimageisen.netlify.app/','https://marsdensqlnotesapp.netlify.app','https://tsushimaartfantasia.netlify.app/','https://marsdenjacques.github.io/'],
     ['https://marsdenjacques.itch.io/tetromivibes','https://marsdenjacques.github.io/2d-game-of-life/','https://marsdenjacques.itch.io/','https://www.kac.or.jp/wp-content/uploads/63a954ded52fd6bc624a1746aa2ffbce.pdf',''],
