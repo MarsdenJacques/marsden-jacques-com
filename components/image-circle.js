@@ -7,10 +7,10 @@ export default function ImageCircle({text, image, link}){
             {
                 link !== '' ? 
                 <a className = {styles.link} href = {link}><div className = {styles.circle + ' ' + styles.linkCircle}>
-                    <Image src = {image} width = {400} height = {400} className = {styles.img} priority={true}/>
+                    <Image src = {image} width = {400} height = {400} className = {styles.img}/>
                 </div></a> : 
                 <div className = {styles.circle}>
-                    <Image src = {image} width = {400} height = {400} className = {styles.img} priority = {true}/>
+                    <Image src = {image} width = {400} height = {400} className = {styles.img}/>
                 </div>
             }
             
